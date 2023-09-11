@@ -17,7 +17,8 @@ URL = https://cardco.adaptable.app
 "Deploy your app to Adaptable so it can be accessed through the internet.": To deploy my app I created a new app on adaptable that connected to my github repository "cardco".
 
 - Create a diagram explaining the flow of client requests to a Django web app and its response. Also in the diagram, explain the connections between urls.py, views.py, models.py, and the HTML file(s).
-...
+![Alt text](<Blank board.jpeg>)
+
 
 - What is the purpose of a virtual environment?
 
