@@ -1,9 +1,10 @@
 URL = https://cardco.adaptable.app
 
 - How do you implement the tasks in the checklist?
+
 "Create a new Django project.": I created a new Django project by activiting a virutal environment inside my new directory "cardco". I used the same dependencies as the tutorial and ran the command "django-admin startproject main ." As mentioned in the tutorial I used ["*"] for "ALLOWED_HOSTS" so that adaptable.io can host the application.
 
--"Create an app with the name main on that project.": When creating my new Django project I named it "main" by using the command "django-admin startproject main ."
+"Create an app with the name main on that project.": When creating my new Django project I named it "main" by using the command "django-admin startproject main ."
 
 "Create a URL routing configuration to access the main app.": I used the the same URL routing configuration as the tutorial.
 
@@ -19,12 +20,15 @@ URL = https://cardco.adaptable.app
 ...
 
 - What is the purpose of a virtual environment?
+
 The purpose of a virtual environment is to prevent confusions between dependencies of different applications. In our case, if we have two web applications that use different versions of Django, python doesn't know which one to use because they have the same name in the same directory. A virtual environment solves this by creating an isolated environment for a project that only uses one version or the other.
 
 - Can we create a Django web app without a virtual environment?
+
 We can create a Django web app without a virtual environment. However, as I mentioned above, if we have multiple applications that implement different dependencies it can cause bugs.
 
 - What is MVC, MVT, and MVVM? Explain the differences between the three.
+
 MVC stands for Model View Controller. In MVC, the conroller acts as the itermediary between the model and the view, where the model handles data logic and the view handles user interface changes. The controller handles request flow from the end user.
 
 MVT stands for Model View Template. In MVT, the view acts as the intermediary between the model and the view, where the model handles data logic and the template handles the user interface.
