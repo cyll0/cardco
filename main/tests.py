@@ -10,7 +10,7 @@ class MainTest(TestCase):
         response = Client().get('/main/')
         self.assertTemplateUsed(response, 'main.html')
 
-
+# BONUS
 class ItemModelTest(TestCase):
     @classmethod
     def setUpTestData(cls):
