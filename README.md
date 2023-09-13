@@ -37,8 +37,10 @@ We can create a Django web app without a virtual environment. However, as I ment
 
 ## What is MVC, MVT, and MVVM? Explain the differences between the three.
 
-MVC stands for Model View Controller. In MVC, the conroller acts as the itermediary between the model and the view, where the model handles data logic and the view handles user interface changes. The controller handles request flow from the end user.
+MVC stands for Model View Controller. In MVC, the conroller acts as the intermediary between the model and the view, where the model handles data logic and the view handles user interface changes. The controller handles request flow from the end user.
 
 MVT stands for Model View Template. In MVT, the view acts as the intermediary between the model and the view, where the model handles data logic and the template handles the user interface.
 
-MVVM stands for Model View ViewModel. In MVVM, the viewmodel acts as the intermediary between the model and the view, where the model handles data logic and the view handles user ....
+MVVM stands for Model View ViewModel. In MVVM, the viewmodel acts as the intermediary between the model and the view, where the model handles data and business logic and the view handles the user interface.
+
+Apart from the difference in the seperation of concerns of these design patterns. The difference between these frameworks is apparent based on the needs of the environments they are used in. MVC is typically used in web development frameworks such as Ruby on Rails or ASP.NET; MVT is found on frameworks like Django; MVVM is found on frameworks like Microsoft WPF.
