@@ -1,4 +1,4 @@
-## URL = https://cardco.adaptable.app
+> URL = https://cardco.adaptable.app
 
 # Assignment 2
 
