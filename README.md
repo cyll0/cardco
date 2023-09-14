@@ -1,6 +1,6 @@
 ## URL = https://cardco.adaptable.app
 
-# Assignmet 2:
+# Assignment 2
 
 ## How do you implement the tasks in the checklist?
 
