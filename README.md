@@ -1,5 +1,7 @@
 ## URL = https://cardco.adaptable.app
 
+# Assignmet 2:
+
 ## How do you implement the tasks in the checklist?
 
 * __Create a new Django project:__<br>
@@ -44,3 +46,30 @@ MVT stands for Model View Template. In MVT, the view acts as the intermediary be
 MVVM stands for Model View ViewModel. In MVVM, the viewmodel acts as the intermediary between the model and the view, where the model handles data and business logic and the view handles the user interface.
 
 Apart from the difference in the seperation of concerns of these design patterns. The difference between these frameworks is apparent based on the needs of the environments they are used in. MVC is typically used in web development frameworks such as Ruby on Rails or ASP.NET; MVT is found on frameworks like Django; MVVM is found on frameworks like Microsoft WPF.
+
+# Assignment 3
+
+## What is the difference between POST form and GET form in Django?
+
+The POST form is used for submitting data to the server to be processed and possibly stored. It's suitable for forms that involve sensitive data or when the data is too large to include in the URL. The GET form is primarily used for retrieving data from the server. When you submit a form using GET, the form data is appended to the URL as query parameters, which are visible in the address bar of the browser.
+
+## What are the main differences between XML, JSON, and HTML in the context of data delivery?
+
+XML is often used when you need a highly structured, extensible format, and human readability is a requirement.
+JSON is preferred for data interchange between systems, especially in web development, due to its simplicity and ease of parsing by JavaScript.
+HTML is used for rendering web content to end-users and is not typically used for data exchange but for presenting information in a visually appealing way.
+
+## Why is JSON often used in data exchange between modern web applications?
+
+JSON's simplicity, efficiency, and compatibility with modern web technologies make it a preferred choice for data exchange in web applications, especially in the context of RESTful APIs (Representational State Transfer) and AJAX (Asynchronous JavaScript and XML) requests, where it has become the standard for structuring and transmitting data between the client and server.
+
+## Explain how you implemented the checklist above step-by-step (not just following the tutorial).
+
+* __Create a form input to add a model object to the previous app.__<br>
+
+* __Add 5 views to view the added objects in HTML, XML, JSON, XML by ID, and JSON by ID formats.__<br>
+
+* __Create URL routing for each of the views added in point 2.__<br>
+
+## Access the five URLs in point 2 using Postman, take screenshots of the results in Postman
+...
