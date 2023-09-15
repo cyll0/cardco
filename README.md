@@ -2,7 +2,7 @@
 
 # Assignment 2
 
-## How do you implement the tasks in the checklist?
+### How do you implement the tasks in the checklist?
 
 * __Create a new Django project:__<br>
 I created a new Django project by activiting a virutal environment inside my new directory "cardco". I used the same dependencies as the tutorial and ran the command "django-admin startproject main ." As mentioned in the tutorial I used ["*"] for "ALLOWED_HOSTS" so that adaptable.io can host the application.
@@ -25,19 +25,19 @@ Because my function has the same name as the tutorial, I didn't have to change t
 * __Deploy your app to Adaptable so it can be accessed through the internet:__<br>
 To deploy my app I created a new app on adaptable that connected to my github repository "cardco".
 
-## Create a diagram explaining the flow of client requests to a Django web app and its response. Also in the diagram, explain the connections between urls.py, views.py, models.py, and the HTML file(s).
+### Create a diagram explaining the flow of client requests to a Django web app and its response. Also in the diagram, explain the connections between urls.py, views.py, models.py, and the HTML file(s).
 ![Alt text](<diagram.jpeg>)
 
 
-## What is the purpose of a virtual environment?
+### What is the purpose of a virtual environment?
 
 The purpose of a virtual environment is to prevent confusions between dependencies of different applications. In our case, if we have two web applications that use different versions of Django, python doesn't know which one to use because they have the same name in the same directory. A virtual environment solves this by creating an isolated environment for a project that only uses one version or the other.
 
-## Can we create a Django web app without a virtual environment?
+### Can we create a Django web app without a virtual environment?
 
 We can create a Django web app without a virtual environment. However, as I mentioned above, if we have multiple applications that implement different dependencies it can cause bugs.
 
-## What is MVC, MVT, and MVVM? Explain the differences between the three.
+### What is MVC, MVT, and MVVM? Explain the differences between the three.
 
 MVC stands for Model View Controller. In MVC, the conroller acts as the intermediary between the model and the view, where the model handles data logic and the view handles user interface changes. The controller handles request flow from the end user.
 
@@ -74,23 +74,23 @@ To view the added objects in HTML, I created a table that shows the items in the
 * __Create URL routing for each of the views added in point 2.__<br>
 To craete URL routing for each of the views added in point two, I added a new path in main/urls.py specifying their route, function, and name.
 
-## Access the five URLs in point 2 using Postman, take screenshots of the results in Postman
-* __HMTL__
+### Access the five URLs in point 2 using Postman, take screenshots of the results in Postman
+* __HMTL:__
 
 ![Alt text](<Screenshot 2023-09-15 at 11.11.37.png>)
 
-* __XML__
+* __XML:__
 
 ![Alt text](<Screenshot 2023-09-15 at 11.12.05.png>)
 
-* __JSON__
+* __JSON:__
 
 ![Alt text](<Screenshot 2023-09-15 at 11.12.17.png>)
 
-* __XML by ID__
+* __XML by ID:__
 
 ![Alt text](<Screenshot 2023-09-15 at 11.13.02.png>)
 
-* __JSON by ID__
+* __JSON by ID:__
 
 ![Alt text](<Screenshot 2023-09-15 at 11.13.17.png>)
