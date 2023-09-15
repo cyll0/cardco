@@ -66,10 +66,17 @@ JSON's simplicity, efficiency, and compatibility with modern web technologies ma
 ## Explain how you implemented the checklist above step-by-step (not just following the tutorial).
 
 * __Create a form input to add a model object to the previous app.__<br>
+I created a base template in a file called base.html to act as the structure of the web view's structure. Then, I included this file in the TEMPLATES section of the settings.py folder. After that, I adjusted the main.html file to extend base.html. To create the form input, I made a new file called forms.py where the class ItemForm has four fields: name, amount, description, and date added (implict). In the same file, I added a function "create_item", which creates an item with the form input. Next, I added this function to the urls.py file. A webpage with an input form was then created to add items to the application's database. In main.html, I created a table to represent the items in the database.
 
 * __Add 5 views to view the added objects in HTML, XML, JSON, XML by ID, and JSON by ID formats.__<br>
+To view the added objects in HTML, I created a table that shows the items in the database. The four other views are quite similar, the only difference is their serialized form and content types.
 
 * __Create URL routing for each of the views added in point 2.__<br>
+To craete URL routing for each of the views added in point two, I added a new path in main/urls.py specifying their route, function, and name.
 
 ## Access the five URLs in point 2 using Postman, take screenshots of the results in Postman
-...
+![Alt text](<Screenshot 2023-09-15 at 11.11.37.png>)
+![Alt text](<Screenshot 2023-09-15 at 11.12.05.png>)
+![Alt text](<Screenshot 2023-09-15 at 11.12.17.png>)
+![Alt text](<Screenshot 2023-09-15 at 11.13.02.png>)
+![Alt text](<Screenshot 2023-09-15 at 11.13.17.png>)
