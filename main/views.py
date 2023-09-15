@@ -13,7 +13,8 @@ def show_main(request):
         'appName': 'CardCo',
         'name': 'Clayton Nagle',
         'class': 'KKI PBD',
-        'items': items
+        'items': items,
+        'itemCnt': items.count()
     }
 
     return render(request, "main.html", context)
