@@ -49,21 +49,21 @@ Apart from the difference in the seperation of concerns of these design patterns
 
 # Assignment 3
 
-## What is the difference between POST form and GET form in Django?
+### What is the difference between POST form and GET form in Django?
 
 The POST form is used for submitting data to the server to be processed and possibly stored. It's suitable for forms that involve sensitive data or when the data is too large to include in the URL. The GET form is primarily used for retrieving data from the server. When you submit a form using GET, the form data is appended to the URL as query parameters, which are visible in the address bar of the browser.
 
-## What are the main differences between XML, JSON, and HTML in the context of data delivery?
+### What are the main differences between XML, JSON, and HTML in the context of data delivery?
 
 XML is often used when you need a highly structured, extensible format, and human readability is a requirement.
 JSON is preferred for data interchange between systems, especially in web development, due to its simplicity and ease of parsing by JavaScript.
 HTML is used for rendering web content to end-users and is not typically used for data exchange but for presenting information in a visually appealing way.
 
-## Why is JSON often used in data exchange between modern web applications?
+### Why is JSON often used in data exchange between modern web applications?
 
 JSON's simplicity, efficiency, and compatibility with modern web technologies make it a preferred choice for data exchange in web applications, especially in the context of RESTful APIs (Representational State Transfer) and AJAX (Asynchronous JavaScript and XML) requests, where it has become the standard for structuring and transmitting data between the client and server.
 
-## Explain how you implemented the checklist above step-by-step (not just following the tutorial).
+### Explain how you implemented the checklist above step-by-step (not just following the tutorial).
 
 * __Create a form input to add a model object to the previous app.__<br>
 I created a base template in a file called base.html to act as the structure of the web view's structure. Then, I included this file in the TEMPLATES section of the settings.py folder. After that, I adjusted the main.html file to extend base.html. To create the form input, I made a new file called forms.py where the class ItemForm has four fields: name, amount, description, and date added (implict). In the same file, I added a function "create_item", which creates an item with the form input. Next, I added this function to the urls.py file. A webpage with an input form was then created to add items to the application's database. In main.html, I created a table to represent the items in the database.
@@ -75,8 +75,17 @@ To view the added objects in HTML, I created a table that shows the items in the
 To craete URL routing for each of the views added in point two, I added a new path in main/urls.py specifying their route, function, and name.
 
 ## Access the five URLs in point 2 using Postman, take screenshots of the results in Postman
+* HMTL 
 ![Alt text](<Screenshot 2023-09-15 at 11.11.37.png>)
+
+* XML
 ![Alt text](<Screenshot 2023-09-15 at 11.12.05.png>)
+
+* JSON
 ![Alt text](<Screenshot 2023-09-15 at 11.12.17.png>)
+
+* XML by ID
 ![Alt text](<Screenshot 2023-09-15 at 11.13.02.png>)
+
+* JSON by ID
 ![Alt text](<Screenshot 2023-09-15 at 11.13.17.png>)
