@@ -75,17 +75,22 @@ To view the added objects in HTML, I created a table that shows the items in the
 To craete URL routing for each of the views added in point two, I added a new path in main/urls.py specifying their route, function, and name.
 
 ## Access the five URLs in point 2 using Postman, take screenshots of the results in Postman
-* HMTL 
+* __HMTL__
+
 ![Alt text](<Screenshot 2023-09-15 at 11.11.37.png>)
 
-* XML
+* __XML__
+
 ![Alt text](<Screenshot 2023-09-15 at 11.12.05.png>)
 
-* JSON
+* __JSON__
+
 ![Alt text](<Screenshot 2023-09-15 at 11.12.17.png>)
 
-* XML by ID
+* __XML by ID__
+
 ![Alt text](<Screenshot 2023-09-15 at 11.13.02.png>)
 
-* JSON by ID
+* __JSON by ID__
+
 ![Alt text](<Screenshot 2023-09-15 at 11.13.17.png>)
