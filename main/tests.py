@@ -1,5 +1,5 @@
 from django.test import TestCase, Client
-from main.models import Item  # Import the Item model from your app
+from main.models import Item
 
 class MainTest(TestCase):
     def test_main_url_is_exist(self):
