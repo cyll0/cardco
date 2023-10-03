@@ -1,4 +1,6 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %}
+
+{% load static %}
 
 {% block content %}
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -15,9 +17,8 @@
     </div>
     </div>
 </nav>
-
 <div class="px-2 text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3">
-<h1>Add New Item</h1>
+<h1>Edit Item</h1>
 
 <form method="POST">
     {% csrf_token %}
@@ -26,11 +27,10 @@
         <tr>
             <td></td>
             <td>
-                <input type="submit" value="Add Item"/>
+                <input type="submit" value="Edit Item"/>
             </td>
         </tr>
     </table>
 </form>
 </div>
-
 {% endblock %}

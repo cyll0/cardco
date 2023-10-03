@@ -1,6 +1,23 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Clayton</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="{% url 'main:logout' %}">Logout</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="px-2 text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3">
+
     <h1>Card Collection</h1>
 
     <h5>Application Name:</h5>
@@ -31,6 +48,18 @@
                 <td>{{item.amount}}</td>
                 <td>{{item.description}}</td>
                 <td>{{item.date_added}}</td>
+                <td>
+                    <a href="{% url 'main:edit_item' item.pk %}">
+                        <button>
+                            Edit
+                        </button>
+                    </a>
+                    <a href="{% url 'main:delete_item' item.pk %}">
+                        <button>
+                            Delete
+                        </button>
+                    </a>
+                </td>
             </tr>
         {% endfor %}
     </table>
@@ -50,4 +79,5 @@
             Logout
         </button>
     </a>
+</div>
     {% endblock content %}

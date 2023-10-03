@@ -121,3 +121,22 @@ To connect the Item model with User, I imported User from the Django library, an
 
 Display the information of the logged-in user, such as their username, and applying cookies, such as last login, on the main application page:
 
+# Assignment 5
+
+### Explain the purpose of some CSS element selector and when to use it.
+CSS (Cascading Style Sheets) element selectors are used to target and apply styles to specific HTML elements on a web page. Element selectors are one of the fundamental building blocks of CSS and are crucial for controlling the visual presentation of web content. For example, a type selector targets HTML elements based on their element type. We use type selectors when we want to apply a style to all instances of a specific HTML element throughout your webpage.
+
+### Explain some of the HTML5 tags that you know.
+Some HTML5 tags I know are the 'header' tag that is used for introductory content like site logos and navigation menus. The 'nav' tag is used for links to different parts of the website. The 'main' tag signifies the primary content of the document.
+
+### What are the differences between margin and padding?
+Margins are used to control the space outside an element, creating space between the element and its neighboring elements. Margins affect the distance between elements on the page. Padding is used to control the space inside an element, creating space between the element's content and its inner boundaries. Padding affects the content's position within the element.
+
+### What are the differences between the CSS framework Tailwind and Bootstrap?
+ Tailwind CSS and Bootstrap cater to different design philosophies and developer preferences. Tailwind CSS offers more flexibility and encourages custom designs, while Bootstrap provides a pre-designed component library for rapid development.
+
+ ### When should we use Bootstrap rather than Tailwind, and vice versa?
+ The choice between Bootstrap and Tailwind CSS should align with your project's goals and your team's skillset. You can also consider hybrid approaches, where you use Tailwind CSS for certain parts of your project that require customization and Bootstrap for others that benefit from its pre-designed components.
+
+### Explain how you implemented the checklist above step-by-step (not just following the tutorial).
+In summary, the assingments instructions were to customize the five different pages we have created: register, login, inventory, add item, and edit item. To do this I applied the dark theme to each page and centered the content. It's a simple design, but I like how it looks.

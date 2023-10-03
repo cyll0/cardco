@@ -5,11 +5,16 @@
 {% endblock meta %}
 
 {% block content %}
-
+<div class="p-4 text-dark-emphasis bg-dark-subtle border border-dark-subtle rounded-3">
+<div class="text-center">
 <div class = "login">
 
     <h1>Login</h1>
 
+    <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-md-auto">
     <form method="POST" action="">
         {% csrf_token %}
         <table>
@@ -22,14 +27,11 @@
                 <td>Password: </td>
                 <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
             </tr>
-
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
         </table>
+        <input class="btn login_btn" type="submit" value="Login">
     </form>
-
+</div>
+</div>
     {% if messages %}
         <ul>
             {% for message in messages %}
@@ -40,6 +42,7 @@
         
     Don't have an account yet? <a href="{% url 'main:register' %}">Register Now</a>
 
+</div>
 </div>
 
 {% endblock content %}

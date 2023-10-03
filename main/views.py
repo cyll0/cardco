@@ -88,3 +88,26 @@ def logout_user(request):
     response = HttpResponseRedirect(reverse('main:login'))
     response.delete_cookie('last_login')
     return response
+
+def edit_item(request, id):
+    # Get product by ID
+    item = Item.objects.get(pk = id)
+
+    # Set product as instance of form
+    form = ItemForm(request.POST or None, instance=item)
+
+    if form.is_valid() and request.method == "POST":
+        # Save the form and return to home page
+        form.save()
+        return HttpResponseRedirect(reverse('main:show_main'))
+
+    context = {'form': form}
+    return render(request, "edit_item.html", context)
+
+def delete_item(request, id):
+    # Get data by ID
+    item = Item.objects.get(pk=id)
+    # Delete data
+    item.delete()
+    # Return to the main page
+    return HttpResponseRedirect(reverse('main:show_main'))
