@@ -1,4 +1,4 @@
-> URL = https://cardco.adaptable.app
+> URL = http://clayton-ismail-tugas.pbp.cs.ui.ac.id
 
 # Assignment 2
 
@@ -140,3 +140,37 @@ Margins are used to control the space outside an element, creating space between
 
 ### Explain how you implemented the checklist above step-by-step (not just following the tutorial).
 In summary, the assingments instructions were to customize the five different pages we have created: register, login, inventory, add item, and edit item. To do this I applied the dark theme to each page and centered the content. It's a simple design, but I like how it looks.
+
+# Assignment 6
+
+### Explain the difference between asynchronous programming and synchronous programming.
+The difference between asynchronous and synchronous programming is how they handle concurrency and task execution. Synchronous programming executes tasks sequentially and blocks until each task is complete, while asynchronous programming allows tasks to run concurrently and doesn't block the main program flow.
+
+### In the implementation of JavaScript and AJAX, there is an implemented paradigm called the event-driven programming paradigm. Explain what this paradigm means and give one example of its implementation in this assignment.
+The event-driven programming paradigm is a programming approach where the flow of a program is determined by events that occur within the system, rather than being controlled by a linear sequence of instructions. In event-driven programming, the program responds to events such as user actions, system notifications, or external input, and it triggers appropriate actions or functions in response to these events.
+ASK FRANS!!!!!!
+
+### Explain the implementation of asynchronous programming in AJAX.
+Implementing asynchronous programming in AJAX (Asynchronous JavaScript and XML) enables web applications to perform tasks, such as making HTTP requests to fetch data from a server, without blocking the main thread of execution. It allows web pages to remain responsive while waiting for server responses or performing other asynchronous operations.
+
+### In this semester, the implementation of AJAX is done using the Fetch API rather than the jQuery library. Compare the two technologies and write down your opinion which technology is better to use.
+Generally speaking, Fetch API is more modern than jQuery. If you are building a modern web application targeting modern browsers and are comfortable with modern JavaScript features, using the Fetch API is a good choice. It offers better performance and integrates seamlessly with modern development practices. However, if you need to support older browsers or prefer a simpler, more abstracted approach to AJAX requests, jQuery might be a suitable option. jQuery's compatibility with older browsers and its ease of use can be advantageous in such cases.
+
+### Explain how you implemented the checklist above step-by-step (not just following the tutorial).
+* __AJAX GET:__<br>
+In the views.py file, I created a functin called get_item_json. It uses fetch to get the JSON data. Then I added the url routing in urls.py.
+
+* __Create a button that opens a modal with a form for adding an item:__<br>
+In main.html between lines 15-50, I used the template used in the tutorial to implement a form modal for the button. In line 68, I create the buton under the same class as the modal.
+
+* __Create a new view function to add a new item to the database:__<br>
+In views.py, I created a function add_item_ajax that uses the POST method to create a instantiate an item with its respective attributes.
+
+* __Create a /create-ajax/ path that points to the new view function you created:__<br>
+In urls.py, I simply added the routing.
+
+* __Connect the form you created inside the modal to the /create-ajax/ path:__<br>
+In main.html between lines 111-119, I fetch the add_item_ajax function using its url. The post method is used to present the create item form. Only after the form is closed, the items will be refreshed.
+
+* __Perform asynchronous refresh on the main page to display the latest item list without reloading the entire main page:__<br>
+In main.html between lines 84-109, I create a function called refreshItems that calls the function getItems. getItems accesses the items in the database, and is passed into the getItems functions to create a table for each item. By reconstructing the table, we can refresh the items without reloading the entire website.
