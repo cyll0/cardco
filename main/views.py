@@ -114,7 +114,7 @@ def delete_item(request, id):
     return HttpResponseRedirect(reverse('main:show_main'))
 
 def get_item_json(request):
-    card_item = Item.objects.filter(user=request.user)
+    card_item = Item.objects.filter(user=request.user, is_discount=True)
     return HttpResponse(serializers.serialize('json', card_item))
 
 @csrf_exempt
@@ -123,6 +123,7 @@ def add_item_ajax(request):
         name = request.POST.get("name")
         amount = request.POST.get("amount")
         description = request.POST.get("description")
+        is_discout = request.POST.get("is_discount")
         user = request.user
 
         new_item = Item(name=name, amount=amount, description=description, user=user)
