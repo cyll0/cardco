@@ -7,3 +7,4 @@ class Item(models.Model):
     date_added = models.DateField(auto_now_add=True)
     amount = models.IntegerField(default=0)
     description = models.TextField(default="No description provided")
+    is_discount = models.BooleanField(default=False)
