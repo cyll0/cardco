@@ -148,10 +148,6 @@ The difference between asynchronous and synchronous programming is how they hand
 
 ### In the implementation of JavaScript and AJAX, there is an implemented paradigm called the event-driven programming paradigm. Explain what this paradigm means and give one example of its implementation in this assignment.
 The event-driven programming paradigm is a programming approach where the flow of a program is determined by events that occur within the system, rather than being controlled by a linear sequence of instructions. In event-driven programming, the program responds to events such as user actions, system notifications, or external input, and it triggers appropriate actions or functions in response to these events.
-<<<<<<< HEAD
-ASK FRANS!!!!!!
-=======
->>>>>>> 5e72a66ca00f860b7718a4798b3a7787765b4a93
 
 ### Explain the implementation of asynchronous programming in AJAX.
 Implementing asynchronous programming in AJAX (Asynchronous JavaScript and XML) enables web applications to perform tasks, such as making HTTP requests to fetch data from a server, without blocking the main thread of execution. It allows web pages to remain responsive while waiting for server responses or performing other asynchronous operations.

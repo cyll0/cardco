@@ -158,3 +158,20 @@ def create_item_flutter(request):
         return JsonResponse({"status": "success"}, status=200)
     else:
         return JsonResponse({"status": "error"}, status=401)
+
+@csrf_exempt
+def registerFlutter(request):
+    form = UserCreationForm()
+
+    if request.method == "POST":
+        data = json.loads(request.body)
+        form = UserCreationForm(data)
+        if form.is_valid():
+            form.save()
+            return JsonResponse({"status": "success"}, status=200)  
+        else:
+            errorDict = {}
+            for field, errors in form.errors.items():
+                for error in errors:
+                    errorDict[field] = error
+            return JsonResponse(errorDict, status=400)
